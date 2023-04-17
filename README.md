@@ -17,7 +17,7 @@ This starter uses [Remix](https://remix.run/) for the frontend and [Sanity](http
 
 ## Prerequisities
 
-- [Node.js](https://nodejs.org/en/) (v16.12 or later)
+- [Node.js](https://nodejs.org/en/) (v14.18 or later)
 - [Sanity CLI](https://www.sanity.io/docs/getting-started-with-sanity-cli) (optional)
 
 ## Getting started
@@ -46,7 +46,10 @@ The schema for the `Post` document is defined in the `/studio/schemas` folder. Y
 
 ## Removing TypeScript
 
-If you do not wish to use TypeScript, we've included a `remove-typescript.mjs` file in the root of this repository. You can run this file with `node remove-typescript.mjs` to strip all types from both the `/app` and `/studio` folders. Please run this before tampering with any code to ensure that all types are properly removed.
+If you do not wish to use TypeScript, we've included a `remove-typescript.mjs` file in the root of this repository.
+
+1. Run `npm install` to install the dependencies to remove TypeScript
+2. Run `node remove-typescript.mjs` to strip all types from both the `/app` and `/studio` folders
 
 If you intend to use TypeScript, you can safely remove the `remove-typescript.mjs` file.
 

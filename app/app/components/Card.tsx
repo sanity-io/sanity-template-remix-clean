@@ -1,6 +1,6 @@
 import { formatDate } from "~/utils";
 import { urlFor } from "~/utils/image";
-import { Post } from "~/utils/sanity";
+import { type Post } from "~/utils/sanity";
 
 export default function Card({ post }: { post: Post }) {
   return (

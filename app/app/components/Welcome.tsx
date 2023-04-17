@@ -5,8 +5,8 @@ export default function Welcome() {
         <div className="logos__blur"></div>
         <img
           className="logos__entry"
-          src="/astro.svg"
-          alt="Astro Logo"
+          src="/remix.svg"
+          alt="Remix Logo"
         />
         <span className="logos__plus">+</span>
         <img
@@ -28,14 +28,21 @@ export default function Welcome() {
           <li className="steps__entry">
             <h3 className="step__title">Start building your frontend</h3>
             <p className="steps__text">
-              Check out <a href="#">the guide</a> for using Astro with Sanity.
+              Check out <a href="#">the guide</a> for using Remix with Sanity.
             </p>
           </li>
           <li className="steps__entry">
             <h3 className="steps__subtitle">Join the Sanity Community</h3>
             <p className="steps__text">
-              Leverage <a href="#">our awesome community</a>, and share tips and
-              discuss!
+              Leverage{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                href="https://www.sanity.io/exchange/community"
+              >
+                our awesome community
+              </a>
+              , and share tips and discuss!
             </p>
           </li>
         </ul>

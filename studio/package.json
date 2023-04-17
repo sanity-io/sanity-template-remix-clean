@@ -24,11 +24,11 @@
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^2.0.1",
+    "@types/node": "^18.15.11",
     "@types/react": "^18.0.25",
     "@types/styled-components": "^5.1.26",
     "eslint": "^8.6.0",
     "prettier": "^2.8.4",
-    "rimraf": "^4.4.1",
     "typescript": "^5.0.2"
   },
   "prettier": {

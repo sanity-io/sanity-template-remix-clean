@@ -1,5 +1,5 @@
-import { LinksFunction, json } from "@remix-run/node";
-import styles from "./styles/build/index.css";
+import { type LinksFunction, json } from "@remix-run/node";
+import styles from "./styles/index.css";
 import {
   Links,
   LiveReload,
