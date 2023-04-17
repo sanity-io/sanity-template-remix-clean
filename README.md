@@ -51,7 +51,7 @@ If you do not wish to use TypeScript, we've included a `remove-typescript.mjs` f
 1. Run `npm install` to install the dependencies to remove TypeScript
 2. Run `node remove-typescript.mjs` to strip all types from both the `/app` and `/studio` folders
 
-If you intend to use TypeScript, you can safely remove the `remove-typescript.mjs` file.
+If you intend to use TypeScript, you can safely delete any files in the root that isn't `/studio` or `/app`.
 
 ## Deployments
 
