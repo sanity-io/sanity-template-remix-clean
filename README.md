@@ -25,11 +25,11 @@ This starter uses [Remix](https://remix.run/) for the frontend and [Sanity](http
 The following commands are meant to be run in **both** the `/app` and `/studio` folders.
 
 1. `npm install` to install dependencies
-2. `sanity init --env`, this will:
+2. `npm create sanity@latest init --env`, this will:
 
 - ask you to select or create a Sanity project and dataset
 - output a `.env` file with appropriate variables
-- _(use or `npm create sanity@latest --init env` if you don't have the CLI installed)_
+- _(or use `sanity init --env` if you have the CLI installed)_
 
 3. `npm run dev` to start the development server
 
