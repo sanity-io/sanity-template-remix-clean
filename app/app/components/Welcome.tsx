@@ -19,16 +19,23 @@ export default function Welcome() {
         <h2 className="steps__title">Next steps</h2>
         <ul className="steps__list">
           <li className="steps__entry">
-            <h3 className="steps__subtitle">Customize your Sanity Studio</h3>
+            <h3 className="steps__subtitle">Publish a post in your Studio</h3>
             <p className="steps__text">
-              The code for your app is on <a href="#">GitHub</a>, and make sure
-              to check out the Sanity Docs.
+              Visit the Sanity Studio and publish a new document of type post.
             </p>
           </li>
           <li className="steps__entry">
-            <h3 className="step__title">Start building your frontend</h3>
+            <h3 className="step__title">Dive into the documentation</h3>
             <p className="steps__text">
-              Check out <a href="#">the guide</a> for using Remix with Sanity.
+              Check out{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                href="https://www.sanity.io/docs"
+              >
+                the documentation
+              </a>{" "}
+              to learn more about Sanity.
             </p>
           </li>
           <li className="steps__entry">

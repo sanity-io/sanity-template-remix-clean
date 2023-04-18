@@ -25,7 +25,7 @@ export default function Index() {
           />
         ))
       ) : (
-      <Welcome />
+        <Welcome />
       )}
     </section>
   );
