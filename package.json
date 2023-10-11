@@ -12,6 +12,6 @@
     "babel-plugin-replace-ts-export-assignment": "^0.0.2",
     "fast-glob": "^3.2.12",
     "fs-extra": "^11.1.1",
-    "prettier": "^2.8.7"
+    "prettier": "^3.0.3"
   }
 }
