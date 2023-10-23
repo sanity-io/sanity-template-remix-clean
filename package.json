@@ -6,9 +6,9 @@
     "postinstall": "echo '\u001b[0;31mThis is not a monorepo. Run commands in /app and /studio individually.\u001b[0m'"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.0",
+    "@babel/core": "^7.23.2",
     "@babel/plugin-syntax-jsx": "^7.22.5",
-    "@babel/preset-typescript": "^7.23.0",
+    "@babel/preset-typescript": "^7.23.2",
     "babel-plugin-replace-ts-export-assignment": "^0.0.2",
     "fast-glob": "^3.3.1",
     "fs-extra": "^11.1.1",
