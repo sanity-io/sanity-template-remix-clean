@@ -10,9 +10,9 @@ import {
   ScrollRestoration,
   useLoaderData,
 } from '@remix-run/react'
-import { Suspense, lazy } from "react";
+import { Suspense, lazy } from 'react'
 
-const VisualEditing = lazy(() => import("~/components/VisualEditing"));
+const VisualEditing = lazy(() => import('~/components/VisualEditing'))
 
 export const loader = () => {
   return json({
