@@ -3,17 +3,9 @@ export default function Welcome() {
     <div className="welcome__container">
       <div className="logos">
         <div className="logos__blur"></div>
-        <img
-          className="logos__entry"
-          src="/remix.svg"
-          alt="Remix Logo"
-        />
+        <img className="logos__entry" src="/remix.svg" alt="Remix Logo" />
         <span className="logos__plus">+</span>
-        <img
-          className="logos__entry"
-          src="/sanity.svg"
-          alt="Sanity Logo"
-        />
+        <img className="logos__entry" src="/sanity.svg" alt="Sanity Logo" />
       </div>
       <div className="steps">
         <h2 className="steps__title">Next steps</h2>
@@ -27,21 +19,21 @@ export default function Welcome() {
           <li className="steps__entry">
             <h3 className="step__title">Dive into the documentation</h3>
             <p className="steps__text">
-              Check out{" "}
+              Check out{' '}
               <a
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 href="https://www.sanity.io/docs"
               >
                 the documentation
-              </a>{" "}
+              </a>{' '}
               to learn more about Sanity.
             </p>
           </li>
           <li className="steps__entry">
             <h3 className="steps__subtitle">Join the Sanity Community</h3>
             <p className="steps__text">
-              Leverage{" "}
+              Leverage{' '}
               <a
                 target="_blank"
                 rel="noopener noreferrer nofollow"
@@ -55,5 +47,5 @@ export default function Welcome() {
         </ul>
       </div>
     </div>
-  );
+  )
 }

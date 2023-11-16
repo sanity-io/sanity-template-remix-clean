@@ -1,6 +1,7 @@
-import { formatDate } from "~/utils";
-import { urlFor } from "~/utils/image";
-import { type Post } from "~/utils/sanity";
+import { Link } from '@remix-run/react'
+import { formatDate } from '~/utils/formatDate'
+import { urlFor } from '~/sanity/image'
+import { type Post } from '~/sanity/types'
 
 export default function Card({ post }: { post: Post }) {
   return (
@@ -15,17 +16,17 @@ export default function Card({ post }: { post: Post }) {
         <div className="card__cover--none" />
       )}
       <div className="card__container">
-        <h3 className="card__title">
-          <a
-            className="card__link"
-            href={`/post/${post.slug.current}`}
-          >
-            {post.title}
-          </a>
-        </h3>
+        <Link
+          className="card__link"
+          to={post.slug?.current ? `/post/${post.slug.current}` : '/'}
+        >
+          <h3 className="card__title">{post.title}</h3>
+        </Link>
         <p className="card__excerpt">{post.excerpt}</p>
-        <p className="card__date">{formatDate(post._createdAt)}</p>
+        {post._createdAt && (
+          <p className="card__date">{formatDate(post._createdAt)}</p>
+        )}
       </div>
     </div>
-  );
+  )
 }

@@ -1,17 +1,24 @@
 {
   "name": "sanity-template-remix-clean",
-  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "postinstall": "echo '\u001b[0;31mThis is not a monorepo. Run commands in /app and /studio individually.\u001b[0m'"
+    "dev": "pnpm -r dev",
+    "format": "prettier --cache --write ."
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-packagejson",
+      "prettier-plugin-svelte",
+      "prettier-plugin-tailwindcss"
+    ],
+    "semi": false,
+    "singleQuote": true
   },
   "devDependencies": {
-    "@babel/core": "^7.23.3",
-    "@babel/plugin-syntax-jsx": "^7.23.3",
-    "@babel/preset-typescript": "^7.23.3",
-    "babel-plugin-replace-ts-export-assignment": "^0.0.2",
-    "fast-glob": "^3.3.2",
-    "fs-extra": "^11.1.1",
-    "prettier": "^3.1.0"
-  }
+    "prettier": "3.0.3",
+    "prettier-plugin-packagejson": "2.4.6",
+    "prettier-plugin-svelte": "3.0.3",
+    "prettier-plugin-tailwindcss": "0.5.7"
+  },
+  "packageManager": "pnpm@8.10.2"
 }

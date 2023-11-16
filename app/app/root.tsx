@@ -1,6 +1,7 @@
-import { type LinksFunction, json } from "@remix-run/node";
-import styles from "./styles/index.css";
+import { type LinksFunction, json } from '@remix-run/node'
+import styles from './styles/index.css'
 import {
+  Link,
   Links,
   LiveReload,
   Meta,
@@ -8,59 +9,58 @@ import {
   Scripts,
   ScrollRestoration,
   useLoaderData,
-} from "@remix-run/react";
+} from '@remix-run/react'
+import { Suspense, lazy } from "react";
+
+const VisualEditing = lazy(() => import("~/components/VisualEditing"));
 
 export const loader = () => {
   return json({
     ENV: {
-      SANITY_PROJECT_ID: process.env.SANITY_PROJECT_ID,
-      SANITY_DATASET: process.env.SANITY_DATASET,
+      SANITY_STUDIO_PROJECT_ID: process.env.SANITY_STUDIO_PROJECT_ID,
+      SANITY_STUDIO_DATASET: process.env.SANITY_STUDIO_DATASET,
+      SANITY_STUDIO_URL: process.env.SANITY_STUDIO_URL,
+      SANITY_STUDIO_USE_STEGA: process.env.SANITY_STUDIO_USE_STEGA,
     },
-  });
-};
+  })
+}
 
 export const links: LinksFunction = () => {
   return [
-    { rel: "stylesheet", href: styles },
-    { rel: "preconnect", href: "https://fonts.googleapis.com" },
-    { rel: "preconnect", href: "https://fonts.gstatic.com" },
+    { rel: 'stylesheet', href: styles },
+    { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+    { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
     {
-      rel: "stylesheet",
-      href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&family=Inter:wght@500;700;800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&family=Inter:wght@500;700;800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap',
     },
-  ];
-};
+  ]
+}
 
 export default function App() {
-  const { ENV } = useLoaderData<typeof loader>();
+  const { ENV } = useLoaderData<typeof loader>()
 
   return (
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width,initial-scale=1"
-        />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
         <Meta />
         <Links />
       </head>
       <body>
         <div className="container">
           <header className="header">
-            <a
-              className="header__title"
-              href="/"
-            >
+            <Link className="header__title" to="/">
               Remix + Sanity
-            </a>
+            </Link>
           </header>
           <main>
             <Outlet />
           </main>
           <footer className="footer">
             <p className="footer__text">
-              Made with{" "}
+              Made with{' '}
               <svg
                 datasanity-icon="heart-filled"
                 width="1em"
@@ -75,21 +75,25 @@ export default function App() {
                   stroke="currentColor"
                   strokeWidth="1.2"
                 ></path>
-              </svg>{" "}
+              </svg>{' '}
               at Sanity
             </p>
           </footer>
         </div>
-
         <ScrollRestoration />
         <script
           dangerouslySetInnerHTML={{
             __html: `window.ENV = ${JSON.stringify(ENV)}`,
           }}
         />
+        {ENV.SANITY_STUDIO_USE_STEGA ? (
+          <Suspense>
+            <VisualEditing />
+          </Suspense>
+        ) : null}
         <Scripts />
         <LiveReload />
       </body>
     </html>
-  );
+  )
 }

@@ -24,14 +24,15 @@ This starter uses [Remix](https://remix.run/) for the frontend and [Sanity](http
 
 The following commands are meant to be run in **both** the `/app` and `/studio` folders.
 
-1. `npm install` to install dependencies
-2. `npm create sanity@latest init --env`, this will:
+1. `pnpm install` to install dependencies
+2. `cd studio && pnpm sanity init --env .env.local`, this will:
 
 - ask you to select or create a Sanity project and dataset
-- output a `.env` file with appropriate variables
-- _(or use `sanity init --env` if you have the CLI installed)_
+- output a `.env.local` file with appropriate variables
 
-3. `npm run dev` to start the development server
+3.  `cp ./studio/.env.local ./app/.env`.
+
+4.  Start the development servers using `pnpm dev`
 
 Your Remix app should now be running on [http://localhost:3000/](http://localhost:3000/) and Studio on [http://localhost:3333/](http://localhost:3333/).
 
@@ -44,21 +45,9 @@ _Feel free to move each of the folders to their own location and check them into
 
 The schema for the `Post` document is defined in the `/studio/schemas` folder. You can add more documents and schemas to the Studio to suit your needs.
 
-## Removing TypeScript
-
-If you do not wish to use TypeScript, we've included a `remove-typescript.mjs` file in the root of this repository.
-
-To run this file, you must:
-
-1. Run `npm install` in the repository root to install dependencies
-2. Run `node remove-typescript.mjs` to strip all types from both the `/app` and `/studio` folders
-
-If you intend to use TypeScript or have stripped TypeScript, you can safely delete all files in the repository root that isn't `/studio` or `/app`.
-
 ## Deployments
 
 The `/app` and `/studio` folders are meant to be deployed separately.
 
-Feel free to deploy the App to whichever hosting provider you prefer. We recommend [Vercel](https://vercel.com/).
-
-You can deploy the Sanity Studio by running `sanity deploy` in the `/studio` repository, provided you have the `@sanity/cli` installed globally.
+Make sure that after `/app` is deployed the `.env` file in `/studio` is updated with its deployment URL under `SANITY_STUDIO_PREVIEW_URL`.
+And `/app` has a `.env` file with `SANITY_STUDIO_URL` that points to the Studio's deployment URL.

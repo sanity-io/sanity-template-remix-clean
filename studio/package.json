@@ -1,35 +1,26 @@
 {
-  "name": "app",
+  "name": "sanity-template-remix-clean-studio",
   "private": true,
-  "version": "1.0.0",
-  "main": "package.json",
-  "license": "UNLICENSED",
   "scripts": {
     "dev": "sanity dev",
     "start": "sanity start",
-    "build": "sanity build",
-    "deploy": "sanity deploy",
-    "deploy-graphql": "sanity graphql deploy"
+    "build": "sanity build"
   },
-  "keywords": [
-    "sanity"
-  ],
   "dependencies": {
-    "@sanity/vision": "^3.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-is": "^18.2.0",
-    "sanity": "^3.8.1",
-    "styled-components": "^6.0.0"
+    "@sanity/vision": "3.20.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "rxjs": "7.8.1",
+    "sanity": "3.20.0",
+    "styled-components": "6.1.1"
   },
   "devDependencies": {
-    "@sanity/eslint-config-studio": "^3.0.1",
-    "@types/node": "^18.18.6",
-    "@types/react": "^18.2.37",
-    "@types/styled-components": "^5.1.30",
-    "eslint": "^8.53.0",
-    "prettier": "^3.1.0",
-    "typescript": "^5.2.2"
+    "@sanity/eslint-config-studio": "3.0.1",
+    "@types/node": "20.8.8",
+    "@types/react": "18.2.37",
+    "eslint": "8.53.0",
+    "prettier": "3.0.3",
+    "typescript": "5.2.2"
   },
   "prettier": {
     "semi": false,
