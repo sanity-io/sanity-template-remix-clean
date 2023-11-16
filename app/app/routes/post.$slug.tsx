@@ -3,27 +3,31 @@ import { type LoaderFunctionArgs } from '@remix-run/node'
 import { useLoaderData } from '@remix-run/react'
 import { formatDate } from '~/utils/formatDate'
 import { urlFor } from '~/sanity/image'
-import { useQuery } from "~/sanity/loader";
-import { loadQuery } from "~/sanity/loader.server";
-import { POST_QUERY } from "~/sanity/queries";
+import { useQuery } from '~/sanity/loader'
+import { loadQuery } from '~/sanity/loader.server'
+import { POST_QUERY } from '~/sanity/queries'
 import { Post } from '~/sanity/types'
 
 export const loader = async ({ params }: LoaderFunctionArgs) => {
-  const initial = await loadQuery<Post>(POST_QUERY, params);
+  const initial = await loadQuery<Post>(POST_QUERY, params)
 
-  return { initial, query: POST_QUERY, params };
-};
+  return { initial, query: POST_QUERY, params }
+}
 
 export default function PostRoute() {
-  const { initial, query, params } = useLoaderData<typeof loader>();
-  const { data, loading, error } = useQuery<typeof initial.data>(query, params, {
-    initial,
-  });
+  const { initial, query, params } = useLoaderData<typeof loader>()
+  const { data, loading, error } = useQuery<typeof initial.data>(
+    query,
+    params,
+    {
+      initial,
+    },
+  )
 
   if (error) {
     throw error
   } else if (loading && !data) {
-    return <div>Loading...</div>;
+    return <div>Loading...</div>
   }
 
   return (
