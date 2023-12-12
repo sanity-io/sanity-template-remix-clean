@@ -7,6 +7,7 @@ This starter uses [Remix](https://remix.run/) for the frontend and [Sanity](http
 - How to fetch content as data from [the Sanity Content Lake](https://www.sanity.io/docs/datastore)
 - How to render block content with [Portable Text](https://www.sanity.io/docs/presenting-block-text)
 - A [Sanity Studio](https://www.sanity.io/docs/sanity-studio) to create and edit content
+- Visual editing with live updates through [Presentation](https://www.sanity.io/docs/presentation)
 - How to crop and render images with [Sanity Image URLs](https://www.sanity.io/docs/image-url)
 
 > **Note**
