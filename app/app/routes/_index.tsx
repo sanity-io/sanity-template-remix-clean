@@ -1,7 +1,7 @@
 import { useLoaderData, type MetaFunction } from '@remix-run/react'
+import { useQuery } from '@sanity/react-loader'
 import Card from '~/components/Card'
 import Welcome from '~/components/Welcome'
-import { useQuery } from '~/sanity/loader'
 import { loadQuery } from '~/sanity/loader.server'
 import { POSTS_QUERY } from '~/sanity/queries'
 import { Post } from '~/sanity/types'
@@ -18,13 +18,12 @@ export const loader = async () => {
 
 export default function Index() {
   const { initial, query, params } = useLoaderData<typeof loader>()
-  const { data, loading, error } = useQuery<typeof initial.data>(
-    query,
-    params,
-    {
-      initial,
-    },
-  )
+  const { data, loading, error, encodeDataAttribute } = useQuery<
+    typeof initial.data
+  >(query, params, {
+    // @ts-expect-error -- TODO fix the typing here
+    initial,
+  })
 
   if (error) {
     throw error
@@ -35,7 +34,13 @@ export default function Index() {
   return (
     <section>
       {data?.length ? (
-        data.map((post) => <Card key={post._id} post={post} />)
+        data.map((post, i) => (
+          <Card
+            key={post._id}
+            post={post}
+            encodeDataAttribute={encodeDataAttribute.scope([i])}
+          />
+        ))
       ) : (
         <Welcome />
       )}
