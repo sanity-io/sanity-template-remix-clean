@@ -23,9 +23,9 @@ This starter uses [Remix](https://remix.run/) for the front end and [Sanity](htt
 
 ## Getting started
 
-The following commands are meant to be run in **both** the `/app` and `/studio` folders.
+Run the following commands to prepare both applications:
 
-1. Install dependencies
+1. From the root of the repository, install dependencies
 
 ```sh
 pnpm install
@@ -36,7 +36,8 @@ pnpm install
 ```sh
 cd studio && pnpm sanity init --env .env.local
 ```
-3. Copy environment variables from the Studio folder to the Remix folder 
+
+3. From the **root directory**, copy environment variables from the Studio folder to the Remix folder 
 
 ```sh
 cp ./studio/.env.local ./app/.env
@@ -47,7 +48,6 @@ cp ./studio/.env.local ./app/.env
 ```sh
 pnpm dev
 ```
-
 
 * Your Remix app should now be running on [http://localhost:3000/](http://localhost:3000/)
 * Your Studio should now be running on [http://localhost:3333/](http://localhost:3333/).
