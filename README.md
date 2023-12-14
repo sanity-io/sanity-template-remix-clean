@@ -1,6 +1,6 @@
 # A minimal Remix site with Sanity Studio
 
-This starter uses [Remix](https://remix.run/) for the frontend and [Sanity](https://sanity.io/) to handle its content.
+This starter uses [Remix](https://remix.run/) for the front end and [Sanity](https://sanity.io/) to handle its content.
 
 ## Featuring
 
@@ -25,21 +25,45 @@ This starter uses [Remix](https://remix.run/) for the frontend and [Sanity](http
 
 The following commands are meant to be run in **both** the `/app` and `/studio` folders.
 
-1. `pnpm install` to install dependencies
-2. `cd studio && pnpm sanity init --env .env.local`, this will:
+1. Install dependencies
 
-- ask you to select or create a Sanity project and dataset
-- output a `.env.local` file with appropriate variables
+```sh
+pnpm install
+```
 
-3.  `cp ./studio/.env.local ./app/.env`.
+2. Select or create a Sanity project and dataset, and output the details to a `.env.local` file
 
-4.  Start the development servers using `pnpm dev`
+```sh
+cd studio && pnpm sanity init --env .env.local
+```
+3. Copy environment variables from the Studio folder to the Remix folder 
 
-Your Remix app should now be running on [http://localhost:3000/](http://localhost:3000/) and Studio on [http://localhost:3333/](http://localhost:3333/).
+```sh
+cp ./studio/.env.local ./app/.env
+```
+
+4.  Start the development servers: 
+
+```sh
+pnpm dev
+```
+
+
+* Your Remix app should now be running on [http://localhost:3000/](http://localhost:3000/)
+* Your Studio should now be running on [http://localhost:3333/](http://localhost:3333/).
 
 _Feel free to move each of the folders to their own location and check them into version control._
 
-### Add content
+### Enable Visual Editing in the Remix app
+
+Update the `.env` file in the `/app` directory to enable "stega", which is required for [Presentation](https://www.sanity.io/docs/presentation).
+
+```
+# ./app/.env
+SANITY_STUDIO_STEGA_ENABLED="true"
+```
+
+### Add content in the Studio
 
 1. Visit the Studio and create and publish a new `Post` document
 2. Visit the App and refresh the page to see your content rendered on the page
@@ -51,4 +75,5 @@ The schema for the `Post` document is defined in the `/studio/schemas` folder. Y
 The `/app` and `/studio` folders are meant to be deployed separately.
 
 Make sure that after `/app` is deployed the `.env` file in `/studio` is updated with its deployment URL under `SANITY_STUDIO_PREVIEW_URL`.
+
 And `/app` has a `.env` file with `SANITY_STUDIO_URL` that points to the Studio's deployment URL.

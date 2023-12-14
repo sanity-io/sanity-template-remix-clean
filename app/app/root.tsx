@@ -20,7 +20,7 @@ export const loader = () => {
       SANITY_STUDIO_PROJECT_ID: process.env.SANITY_STUDIO_PROJECT_ID,
       SANITY_STUDIO_DATASET: process.env.SANITY_STUDIO_DATASET,
       SANITY_STUDIO_URL: process.env.SANITY_STUDIO_URL,
-      SANITY_STUDIO_USE_STEGA: process.env.SANITY_STUDIO_USE_STEGA,
+      SANITY_STUDIO_STEGA_ENABLED: process.env.SANITY_STUDIO_STEGA_ENABLED,
     },
   })
 }
@@ -86,7 +86,7 @@ export default function App() {
             __html: `window.ENV = ${JSON.stringify(ENV)}`,
           }}
         />
-        {ENV.SANITY_STUDIO_USE_STEGA ? (
+        {ENV.SANITY_STUDIO_STEGA_ENABLED ? (
           <Suspense>
             <VisualEditing />
           </Suspense>
