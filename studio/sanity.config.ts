@@ -2,8 +2,7 @@ import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import {schemaTypes} from './schemas'
-// @TODO change back to `sanity/presentation` when fix is released
-import {presentationTool, DocumentLocationResolver} from '@sanity/presentation'
+import {presentationTool, DocumentLocationResolver} from 'sanity/presentation'
 import {Observable, map} from 'rxjs'
 
 export const projectId = process.env.SANITY_STUDIO_PROJECT_ID!
