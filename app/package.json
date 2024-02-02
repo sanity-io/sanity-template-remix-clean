@@ -20,7 +20,7 @@
     "@sanity/overlays": "2.3.9",
     "@sanity/react-loader": "1.8.1",
     "groq": "3.27.1",
-    "isbot": "3.8.0",
+    "isbot": "4.4.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
