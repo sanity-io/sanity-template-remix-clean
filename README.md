@@ -37,20 +37,20 @@ pnpm install
 cd studio && pnpm sanity init --env .env.local
 ```
 
-3. From the **root directory**, copy environment variables from the Studio folder to the Remix folder 
+3. From the **root directory**, copy environment variables from the Studio folder to the Remix folder
 
 ```sh
 cp ./studio/.env.local ./app/.env
 ```
 
-4.  Start the development servers: 
+4.  Start the development servers:
 
 ```sh
 pnpm dev
 ```
 
-* Your Remix app should now be running on [http://localhost:3000/](http://localhost:3000/)
-* Your Studio should now be running on [http://localhost:3333/](http://localhost:3333/).
+- Your Remix app should now be running on [http://localhost:3000/](http://localhost:3000/)
+- Your Studio should now be running on [http://localhost:3333/](http://localhost:3333/).
 
 _Feel free to move each of the folders to their own location and check them into version control._
 
