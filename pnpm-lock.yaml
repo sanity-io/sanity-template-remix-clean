@@ -35,12 +35,12 @@ importers:
       '@sanity/image-url':
         specifier: 1.0.2
         version: 1.0.2
-      '@sanity/overlays':
-        specifier: 2.3.13
-        version: 2.3.13(@remix-run/react@2.6.0)
       '@sanity/react-loader':
         specifier: 1.8.3
         version: 1.8.3(@sanity/client@6.12.3)(react@18.2.0)
+      '@sanity/visual-editing':
+        specifier: 1.2.0
+        version: 1.2.0(@remix-run/react@2.6.0)
       groq:
         specifier: 3.28.0
         version: 3.28.0
@@ -2957,16 +2957,6 @@ packages:
       lodash: 4.17.21
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  /@sanity/overlays@2.3.13(@remix-run/react@2.6.0):
-    resolution: {integrity: sha512-eTIcFM7JgK8TQmG8yo2H7JoDXeECksbvK7QtMezExu/2gA34WUF6BHiQbXA4+WZvM1ecKHDzi/vhlKG5ADYxfA==}
-    engines: {node: '>=16.14'}
-    dependencies:
-      '@sanity/visual-editing': 1.2.0(@remix-run/react@2.6.0)
-    transitivePeerDependencies:
-      - '@remix-run/react'
-      - next
     dev: false
 
   /@sanity/portable-text-editor@3.28.0(react-dom@18.2.0)(react@18.2.0)(rxjs@7.8.1)(styled-components@6.1.8):

@@ -12,7 +12,7 @@ import {
 } from '@remix-run/react'
 import { Suspense, lazy } from 'react'
 
-const VisualEditing = lazy(() => import('~/components/VisualEditing'))
+const LiveVisualEditing = lazy(() => import('~/components/LiveVisualEditing'))
 
 export const loader = () => {
   return json({
@@ -88,7 +88,7 @@ export default function App() {
         />
         {ENV.SANITY_STUDIO_STEGA_ENABLED ? (
           <Suspense>
-            <VisualEditing />
+            <LiveVisualEditing />
           </Suspense>
         ) : null}
         <Scripts />
