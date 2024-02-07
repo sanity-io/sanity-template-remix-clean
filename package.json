@@ -13,7 +13,7 @@
     "singleQuote": true
   },
   "devDependencies": {
-    "prettier": "3.2.4",
+    "prettier": "3.2.5",
     "prettier-plugin-packagejson": "2.4.10"
   },
   "packageManager": "pnpm@8.15.1"
