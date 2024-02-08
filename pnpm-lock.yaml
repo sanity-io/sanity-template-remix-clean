@@ -39,8 +39,8 @@ importers:
         specifier: 1.8.3
         version: 1.8.3(@sanity/client@6.12.4)(react@18.2.0)
       '@sanity/visual-editing':
-        specifier: 1.2.0
-        version: 1.2.0(@remix-run/react@2.6.0)
+        specifier: 1.2.1
+        version: 1.2.1(@remix-run/react@2.6.0)
       groq:
         specifier: 3.28.0
         version: 3.28.0
@@ -3252,8 +3252,8 @@ packages:
       - react-is
     dev: false
 
-  /@sanity/visual-editing@1.2.0(@remix-run/react@2.6.0):
-    resolution: {integrity: sha512-L4i6cdAUhMXRFBSdnhzMY0IdNN7TF3grrOxMY0GcPgZ3E28cQmEIv39ZdeoUlrUhXMuMOnfbsgHvbN+jkm8mng==}
+  /@sanity/visual-editing@1.2.1(@remix-run/react@2.6.0):
+    resolution: {integrity: sha512-mHmt8wJe/J6WEgR5fPT/V/IKN50NbA575/jLZgeGmODq0uEVim7AjdsAj59iL4I3nUPgyMczSM1CwBeLpm78oA==}
     engines: {node: '>=18'}
     peerDependencies:
       '@remix-run/react': '>= 2'
