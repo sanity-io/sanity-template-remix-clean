@@ -30,7 +30,7 @@
     "@remix-run/eslint-config": "2.8.0",
     "@sanity/types": "3.30.1",
     "@types/node": "20.8.8",
-    "@types/react": "18.2.62",
+    "@types/react": "18.2.63",
     "@types/react-dom": "18.2.19",
     "autoprefixer": "10.4.18",
     "eslint": "8.57.0",
