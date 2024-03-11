@@ -39,8 +39,8 @@ importers:
         specifier: 1.9.3
         version: 1.9.3(@sanity/client@6.15.3)(react@18.2.0)
       '@sanity/visual-editing':
-        specifier: 1.7.0
-        version: 1.7.0(@remix-run/react@2.8.1)(@sanity/client@6.15.3)
+        specifier: 1.7.1
+        version: 1.7.1(@remix-run/react@2.8.1)(@sanity/client@6.15.3)
       groq:
         specifier: 3.32.0
         version: 3.32.0
@@ -3278,12 +3278,12 @@ packages:
       - react-is
     dev: false
 
-  /@sanity/visual-editing@1.7.0(@remix-run/react@2.8.1)(@sanity/client@6.15.3):
-    resolution: {integrity: sha512-jQm5hKZs9+Bu/8nXDSMl3IQkyIJnu87Xjk4Ca/FHtnfJ2D3JY3TJgcHnUlaBJPKi45lwmqq1VcstcACvtLT5lw==}
+  /@sanity/visual-editing@1.7.1(@remix-run/react@2.8.1)(@sanity/client@6.15.3):
+    resolution: {integrity: sha512-lYzdb5HwSaQKw5O4Svf6YtO1++P2CsJ6g4GLaWpTAk7HcxLhdPu1uLhlNbXVT8x39rscDNmfKvrH+l731Q6gbg==}
     engines: {node: '>=18'}
     peerDependencies:
       '@remix-run/react': '>= 2'
-      '@sanity/client': ^6.15.2
+      '@sanity/client': ^6.15.3
       '@sveltejs/kit': '>= 2'
       next: '>= 13'
       svelte: '>= 4'
