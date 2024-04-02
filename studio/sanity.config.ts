@@ -1,6 +1,6 @@
 import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
+import {structureTool} from 'sanity/structure'
 import {schemaTypes} from './schemas'
 import {presentationTool, DocumentLocationResolver} from 'sanity/presentation'
 import {Observable, map} from 'rxjs'
@@ -49,7 +49,7 @@ export default defineConfig({
   projectId,
   dataset,
   plugins: [
-    deskTool(),
+    structureTool(),
     presentationTool({
       previewUrl: process.env.SANITY_STUDIO_PREVIEW_URL || 'http://localhost:3000',
       locate,
