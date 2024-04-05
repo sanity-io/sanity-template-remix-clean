@@ -11,21 +11,21 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@portabletext/react": "3.0.15",
+    "@portabletext/react": "3.0.17",
     "@remix-run/node": "2.8.1",
     "@remix-run/react": "2.8.1",
     "@remix-run/serve": "2.8.1",
-    "@sanity/client": "6.15.9",
+    "@sanity/client": "6.15.11",
     "@sanity/image-url": "1.0.2",
-    "@sanity/react-loader": "1.9.6",
-    "@sanity/visual-editing": "1.8.5",
+    "@sanity/react-loader": "1.9.9",
+    "@sanity/visual-editing": "1.8.7",
     "groq": "3.36.4",
     "isbot": "5.1.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@portabletext/types": "2.0.11",
+    "@portabletext/types": "2.0.12",
     "@remix-run/dev": "2.8.1",
     "@remix-run/eslint-config": "2.8.1",
     "@sanity/types": "3.36.4",
