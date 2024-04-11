@@ -25,7 +25,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@portabletext/types": "2.0.12",
+    "@portabletext/types": "2.0.13",
     "@remix-run/dev": "2.8.1",
     "@remix-run/eslint-config": "2.8.1",
     "@sanity/types": "3.37.2",
@@ -36,7 +36,7 @@
     "eslint": "8.57.0",
     "postcss": "8.4.38",
     "postcss-cli": "11.0.0",
-    "typescript": "5.4.2"
+    "typescript": "5.4.5"
   },
   "engines": {
     "node": ">= 14.18"
