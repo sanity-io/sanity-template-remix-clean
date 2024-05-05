@@ -7,17 +7,17 @@
     "build": "sanity build"
   },
   "dependencies": {
-    "@sanity/vision": "3.39.0",
-    "react": "18.3.0",
-    "react-dom": "18.3.0",
+    "@sanity/vision": "3.40.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "rxjs": "7.8.1",
-    "sanity": "3.39.0",
-    "styled-components": "6.1.8"
+    "sanity": "3.40.0",
+    "styled-components": "6.1.9"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "4.0.0",
     "@types/node": "20.8.8",
-    "@types/react": "18.3.0",
+    "@types/react": "18.3.1",
     "eslint": "8.57.0",
     "prettier": "3.2.5",
     "typescript": "5.4.5"
