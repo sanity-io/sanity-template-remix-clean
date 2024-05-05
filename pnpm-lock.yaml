@@ -36,11 +36,11 @@ importers:
         specifier: 1.0.2
         version: 1.0.2
       '@sanity/react-loader':
-        specifier: 1.9.16
-        version: 1.9.16(@sanity/client@6.17.2)(react@18.3.1)
+        specifier: 1.9.17
+        version: 1.9.17(@sanity/client@6.17.2)(react@18.3.1)
       '@sanity/visual-editing':
-        specifier: 1.8.17
-        version: 1.8.17(@remix-run/react@2.9.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5))(@sanity/client@6.17.2)
+        specifier: 1.8.18
+        version: 1.8.18(@remix-run/react@2.9.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5))(@sanity/client@6.17.2)
       groq:
         specifier: 3.40.0
         version: 3.40.0
@@ -1640,11 +1640,11 @@ packages:
     resolution: {integrity: sha512-2TjYEvOftD0v7ukx3Csdh9QIu44P2z7NDJtlC3qITJRYV36J7R6Vfd3trVhFnN77/7CZrGjqngrtohv8VqO5nw==}
     engines: {node: '>=18.0.0'}
 
-  '@sanity/core-loader@1.6.11':
-    resolution: {integrity: sha512-PPN9QKnI9gV1rn260d+YxLrb2dZhLaJzEdjF414wKPg0wC9gvWSneERTT5xgClKbkFyKuC/UbzK0epFiwaoJzA==}
+  '@sanity/core-loader@1.6.12':
+    resolution: {integrity: sha512-Kl3P6UtdtPmGhVjz46ek2tLcpteNK+ud+AheoSnuOrCGgqovtVqXY8oTn9WUSccGx5g/BBqmt5+wq/Niv/udCg==}
     engines: {node: '>=18'}
     peerDependencies:
-      '@sanity/client': ^6.15.20
+      '@sanity/client': ^6.17.2
 
   '@sanity/diff-match-patch@3.1.1':
     resolution: {integrity: sha512-dSZqGeYjHKGIkqAzGqLcG92LZyJGX+nYbs/FWawhBbTBDWi21kvQ0hsL3DJThuFVWtZMWTQijN3z6Cnd44Pf2g==}
@@ -1717,17 +1717,17 @@ packages:
     peerDependencies:
       '@sanity/client': ^6.15.20
 
-  '@sanity/preview-url-secret@1.6.11':
-    resolution: {integrity: sha512-MNgDxznespH8I+gkG46IJk+KsTJFNb3BzstWsbJwKURywpcv11vzr8CR2g4B8HNkYcy3EhLN3TRFHTjQNKo2Xw==}
+  '@sanity/preview-url-secret@1.6.12':
+    resolution: {integrity: sha512-DoXtOVSlT7YjCpRfwhT2B7tpxS+xtxlh0piSCK0ur5NbPy3TvcGtZxuc3I5VCXcWO8O+BEv7BxEjXsctLngPYw==}
     engines: {node: '>=18'}
     peerDependencies:
-      '@sanity/client': ^6.15.20
+      '@sanity/client': ^6.17.2
 
-  '@sanity/react-loader@1.9.16':
-    resolution: {integrity: sha512-B7KZKdHCaT20ihU4VElHuSNBTkqCD3x82WzU2/ptW9O8BHoPIPM+KXanelRNGLzfh+YBsxHU8EYfFWioh3O2bQ==}
+  '@sanity/react-loader@1.9.17':
+    resolution: {integrity: sha512-wCCFasVird5ojh+cv0QS/YFYeVt+gkZaRmT9xec022J5GhNmaM1OhTcPcoyXFTDcdJ5RxNb78Q8DtOND1XrLdg==}
     engines: {node: '>=18'}
     peerDependencies:
-      '@sanity/client': ^6.15.20
+      '@sanity/client': ^6.17.2
       react: ^18.2.0
 
   '@sanity/schema@3.40.0':
@@ -1769,12 +1769,12 @@ packages:
       react: ^18
       styled-components: ^6.1
 
-  '@sanity/visual-editing@1.8.17':
-    resolution: {integrity: sha512-OMMo6Sy4zbxY2XlnRsbOZfnG05NWzw9czELwQx9YC2WMLMCNQeBfERzHDJkLptbxyapW6wBC3klG85srcjLPTw==}
+  '@sanity/visual-editing@1.8.18':
+    resolution: {integrity: sha512-6IJ2KZHrnWKAtbxTmxW+mFR3HAnnEdnjtKkAs8wK9pJy8tuh58Q788yxXk0gJBxHwfLACx3zS7z5ATn0av7z2g==}
     engines: {node: '>=18'}
     peerDependencies:
       '@remix-run/react': '>= 2'
-      '@sanity/client': ^6.15.20
+      '@sanity/client': ^6.17.2
       '@sveltejs/kit': '>= 2'
       next: '>= 13 || >=14.3.0-canary.0 <14.3.0'
       svelte: '>= 4'
@@ -2076,8 +2076,8 @@ packages:
   '@vanilla-extract/private@1.0.4':
     resolution: {integrity: sha512-8FGD6AejeC/nXcblgNCM5rnZb9KXa4WNkR03HCWtdJBpANjTgjHEglNLFnhuvdQ78tC6afaxBPI+g7F2NX3tgg==}
 
-  '@vercel/stega@0.1.0':
-    resolution: {integrity: sha512-5b0PkOJsFBX5alChuIO3qpkt5vIZBevzLPhUQ1UP8UzVjL3F1VllnZxp/thfD8R5ol7D7WHkgZHIjdUBX4tDpQ==}
+  '@vercel/stega@0.1.2':
+    resolution: {integrity: sha512-P7mafQXjkrsoyTRppnt0N21udKS9wUmLXHRyP9saLXLHw32j/FgUJ3FscSWgvSqRs4cj7wKZtwqJEvWJ2jbGmA==}
 
   '@vitejs/plugin-react@4.2.1':
     resolution: {integrity: sha512-oojO9IDc4nCUUi8qIR11KoQm0XFFLIwsRBwHRR4d/88IWghn1y6ckz/bJ8GHDCsYEJee8mDzqtJxh15/cisJNQ==}
@@ -7727,7 +7727,7 @@ snapshots:
 
   '@sanity/color@3.0.6': {}
 
-  '@sanity/core-loader@1.6.11(@sanity/client@6.17.2)':
+  '@sanity/core-loader@1.6.12(@sanity/client@6.17.2)':
     dependencies:
       '@sanity/client': 6.17.2(debug@4.3.4)
 
@@ -7893,7 +7893,7 @@ snapshots:
     dependencies:
       '@sanity/client': 6.17.2(debug@4.3.4)
       '@sanity/icons': 2.11.8(react@18.3.1)
-      '@sanity/preview-url-secret': 1.6.11(@sanity/client@6.17.2(debug@4.3.4))
+      '@sanity/preview-url-secret': 1.6.12(@sanity/client@6.17.2(debug@4.3.4))
       '@sanity/ui': 2.1.4(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@sanity/uuid': 3.0.2
       '@types/lodash.isequal': 4.5.8
@@ -7910,15 +7910,15 @@ snapshots:
       - react-is
       - styled-components
 
-  '@sanity/preview-url-secret@1.6.11(@sanity/client@6.17.2(debug@4.3.4))':
+  '@sanity/preview-url-secret@1.6.12(@sanity/client@6.17.2(debug@4.3.4))':
     dependencies:
       '@sanity/client': 6.17.2(debug@4.3.4)
       '@sanity/uuid': 3.0.2
 
-  '@sanity/react-loader@1.9.16(@sanity/client@6.17.2)(react@18.3.1)':
+  '@sanity/react-loader@1.9.17(@sanity/client@6.17.2)(react@18.3.1)':
     dependencies:
       '@sanity/client': 6.17.2(debug@4.3.4)
-      '@sanity/core-loader': 1.6.11(@sanity/client@6.17.2)
+      '@sanity/core-loader': 1.6.12(@sanity/client@6.17.2)
       react: 18.3.1
 
   '@sanity/schema@3.40.0(debug@3.2.7)':
@@ -8058,10 +8058,10 @@ snapshots:
       - react-dom
       - react-is
 
-  '@sanity/visual-editing@1.8.17(@remix-run/react@2.9.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5))(@sanity/client@6.17.2)':
+  '@sanity/visual-editing@1.8.18(@remix-run/react@2.9.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5))(@sanity/client@6.17.2)':
     dependencies:
-      '@sanity/preview-url-secret': 1.6.11(@sanity/client@6.17.2(debug@4.3.4))
-      '@vercel/stega': 0.1.0
+      '@sanity/preview-url-secret': 1.6.12(@sanity/client@6.17.2(debug@4.3.4))
+      '@vercel/stega': 0.1.2
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-is: 18.3.1
@@ -8456,7 +8456,7 @@ snapshots:
 
   '@vanilla-extract/private@1.0.4': {}
 
-  '@vercel/stega@0.1.0': {}
+  '@vercel/stega@0.1.2': {}
 
   '@vitejs/plugin-react@4.2.1(vite@4.5.3(@types/node@20.8.8))':
     dependencies:
