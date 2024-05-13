@@ -31,7 +31,7 @@ importers:
         version: 2.9.1(typescript@5.4.5)
       '@sanity/client':
         specifier: 6.18.0
-        version: 6.18.0(debug@4.3.4)
+        version: 6.18.0
       '@sanity/image-url':
         specifier: 1.0.2
         version: 1.0.2
@@ -65,7 +65,7 @@ importers:
         version: 2.9.1(eslint@8.57.0)(react@18.3.1)(typescript@5.4.5)
       '@sanity/types':
         specifier: 3.41.1
-        version: 3.41.1(debug@4.3.4)
+        version: 3.41.1
       '@types/node':
         specifier: 20.8.8
         version: 20.8.8
@@ -7879,6 +7879,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@sanity/client@6.18.0':
+    dependencies:
+      '@sanity/eventsource': 5.0.2
+      get-it: 8.4.29
+      rxjs: 7.8.1
+    transitivePeerDependencies:
+      - debug
+
   '@sanity/client@6.18.0(debug@3.2.7)':
     dependencies:
       '@sanity/eventsource': 5.0.2
@@ -7890,7 +7898,7 @@ snapshots:
   '@sanity/client@6.18.0(debug@4.3.4)':
     dependencies:
       '@sanity/eventsource': 5.0.2
-      get-it: 8.4.29
+      get-it: 8.4.29(debug@4.3.4)
       rxjs: 7.8.1
     transitivePeerDependencies:
       - debug
@@ -7919,7 +7927,7 @@ snapshots:
 
   '@sanity/core-loader@1.6.12(@sanity/client@6.18.0)':
     dependencies:
-      '@sanity/client': 6.18.0(debug@4.3.4)
+      '@sanity/client': 6.18.0
 
   '@sanity/diff-match-patch@3.1.1': {}
 
@@ -8081,7 +8089,7 @@ snapshots:
 
   '@sanity/presentation@1.15.1(@sanity/client@6.18.0(debug@4.3.4))(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
-      '@sanity/client': 6.18.0(debug@4.3.4)
+      '@sanity/client': 6.18.0
       '@sanity/icons': 2.11.8(react@18.3.1)
       '@sanity/preview-url-secret': 1.6.12(@sanity/client@6.18.0(debug@4.3.4))
       '@sanity/ui': 2.1.6(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
@@ -8103,12 +8111,12 @@ snapshots:
 
   '@sanity/preview-url-secret@1.6.12(@sanity/client@6.18.0(debug@4.3.4))':
     dependencies:
-      '@sanity/client': 6.18.0(debug@4.3.4)
+      '@sanity/client': 6.18.0
       '@sanity/uuid': 3.0.2
 
   '@sanity/react-loader@1.9.17(@sanity/client@6.18.0)(react@18.3.1)':
     dependencies:
-      '@sanity/client': 6.18.0(debug@4.3.4)
+      '@sanity/client': 6.18.0
       '@sanity/core-loader': 1.6.12(@sanity/client@6.18.0)
       react: 18.3.1
 
@@ -8151,6 +8159,13 @@ snapshots:
   '@sanity/types@3.37.2(debug@4.3.4)':
     dependencies:
       '@sanity/client': 6.18.0(debug@4.3.4)
+      '@types/react': 18.3.1
+    transitivePeerDependencies:
+      - debug
+
+  '@sanity/types@3.41.1':
+    dependencies:
+      '@sanity/client': 6.18.0
       '@types/react': 18.3.1
     transitivePeerDependencies:
       - debug
@@ -8260,7 +8275,7 @@ snapshots:
       valibot: 0.30.0
     optionalDependencies:
       '@remix-run/react': 2.9.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5)
-      '@sanity/client': 6.18.0(debug@4.3.4)
+      '@sanity/client': 6.18.0
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
@@ -12399,7 +12414,7 @@ snapshots:
       '@sanity/bifur-client': 0.3.1
       '@sanity/block-tools': 3.41.1
       '@sanity/cli': 3.41.1
-      '@sanity/client': 6.18.0(debug@4.3.4)
+      '@sanity/client': 6.18.0
       '@sanity/color': 3.0.6
       '@sanity/diff': 3.41.1
       '@sanity/diff-match-patch': 3.1.1
