@@ -8137,10 +8137,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@sanity/insert-menu@1.0.6(@sanity/types@3.47.1(debug@4.3.4))(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
+  '@sanity/insert-menu@1.0.6(@sanity/types@3.47.1)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
       '@sanity/icons': 3.2.0(react@18.3.1)
-      '@sanity/types': 3.47.1
+      '@sanity/types': 3.47.1(debug@4.3.4)
       '@sanity/ui': 2.4.0(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       lodash.startcase: 4.4.0
       react: 18.3.1
@@ -8204,11 +8204,11 @@ snapshots:
       - react-dom
       - supports-color
 
-  '@sanity/presentation@1.16.0(@sanity/client@6.20.1(debug@4.3.4))(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
+  '@sanity/presentation@1.16.0(@sanity/client@6.20.1)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))':
     dependencies:
-      '@sanity/client': 6.20.1
+      '@sanity/client': 6.20.1(debug@4.3.4)
       '@sanity/icons': 3.2.0(react@18.3.1)
-      '@sanity/preview-url-secret': 1.6.17(@sanity/client@6.20.1(debug@4.3.4))
+      '@sanity/preview-url-secret': 1.6.17(@sanity/client@6.20.1)
       '@sanity/ui': 2.4.0(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@sanity/uuid': 3.0.2
       '@types/lodash.isequal': 4.5.8
@@ -8227,7 +8227,7 @@ snapshots:
       - react-is
       - styled-components
 
-  '@sanity/preview-url-secret@1.6.17(@sanity/client@6.20.1(debug@4.3.4))':
+  '@sanity/preview-url-secret@1.6.17(@sanity/client@6.20.1)':
     dependencies:
       '@sanity/client': 6.20.1
       '@sanity/uuid': 3.0.2
@@ -8385,7 +8385,7 @@ snapshots:
 
   '@sanity/visual-editing@1.8.22(@remix-run/react@2.9.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.4.5))(@sanity/client@6.20.1)':
     dependencies:
-      '@sanity/preview-url-secret': 1.6.17(@sanity/client@6.20.1(debug@4.3.4))
+      '@sanity/preview-url-secret': 1.6.17(@sanity/client@6.20.1)
       '@vercel/stega': 0.1.2
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -12637,7 +12637,7 @@ snapshots:
       '@sanity/bifur-client': 0.4.1
       '@sanity/block-tools': 3.47.1
       '@sanity/cli': 3.47.1
-      '@sanity/client': 6.20.1
+      '@sanity/client': 6.20.1(debug@4.3.4)
       '@sanity/color': 3.0.6
       '@sanity/diff': 3.47.1
       '@sanity/diff-match-patch': 3.1.1
@@ -12646,15 +12646,15 @@ snapshots:
       '@sanity/icons': 3.2.0(react@18.3.1)
       '@sanity/image-url': 1.0.2
       '@sanity/import': 3.37.3
-      '@sanity/insert-menu': 1.0.6(@sanity/types@3.47.1(debug@4.3.4))(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@sanity/insert-menu': 1.0.6(@sanity/types@3.47.1)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@sanity/logos': 2.1.9(@sanity/color@3.0.6)(react@18.3.1)
       '@sanity/migrate': 3.47.1
       '@sanity/mutator': 3.47.1
       '@sanity/portable-text-editor': 3.47.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)(styled-components@6.1.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
-      '@sanity/presentation': 1.16.0(@sanity/client@6.20.1(debug@4.3.4))(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@sanity/presentation': 1.16.0(@sanity/client@6.20.1)(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@sanity/schema': 3.47.1(debug@4.3.4)
       '@sanity/telemetry': 0.7.7
-      '@sanity/types': 3.47.1
+      '@sanity/types': 3.47.1(debug@4.3.4)
       '@sanity/ui': 2.4.0(react-dom@18.3.1(react@18.3.1))(react-is@18.3.1)(react@18.3.1)(styled-components@6.1.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@sanity/util': 3.47.1(debug@4.3.4)
       '@sanity/uuid': 3.0.2
