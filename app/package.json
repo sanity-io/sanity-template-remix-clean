@@ -12,23 +12,23 @@
   },
   "dependencies": {
     "@portabletext/react": "3.1.0",
-    "@remix-run/node": "2.14.0",
-    "@remix-run/react": "2.14.0",
-    "@remix-run/serve": "2.14.0",
-    "@sanity/client": "6.22.4",
+    "@remix-run/node": "2.15.0",
+    "@remix-run/react": "2.15.0",
+    "@remix-run/serve": "2.15.0",
+    "@sanity/client": "6.22.5",
     "@sanity/image-url": "1.1.0",
-    "@sanity/react-loader": "1.10.18",
-    "@sanity/visual-editing": "2.7.0",
-    "groq": "3.64.1",
+    "@sanity/react-loader": "1.10.21",
+    "@sanity/visual-editing": "2.10.0",
+    "groq": "3.65.0",
     "isbot": "5.1.17",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@portabletext/types": "2.0.13",
-    "@remix-run/dev": "2.14.0",
-    "@remix-run/eslint-config": "2.14.0",
-    "@sanity/types": "3.64.1",
+    "@remix-run/dev": "2.15.0",
+    "@remix-run/eslint-config": "2.15.0",
+    "@sanity/types": "3.65.0",
     "@types/node": "20.8.8",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
@@ -36,7 +36,7 @@
     "eslint": "8.57.1",
     "postcss": "8.4.49",
     "postcss-cli": "11.0.0",
-    "typescript": "5.6.3"
+    "typescript": "5.7.2"
   },
   "engines": {
     "node": ">= 14.18"
