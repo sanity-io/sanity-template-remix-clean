@@ -1,8 +1,12 @@
 {
   "name": "sanity-template-remix-clean",
   "private": true,
+  "workspaces": [
+    "remix-app",
+    "studio"
+  ],
   "scripts": {
-    "dev": "pnpm -r dev",
+    "dev": "concurrently \"npm run dev --workspace=remix-app\" \"npm run dev --workspace=studio\"",
     "format": "prettier --cache --write ."
   },
   "prettier": {
@@ -13,6 +17,7 @@
     "singleQuote": true
   },
   "devDependencies": {
+    "concurrently": "^9.1.0",
     "prettier": "3.4.1",
     "prettier-plugin-packagejson": "2.5.6"
   },
