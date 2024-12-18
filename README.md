@@ -38,7 +38,7 @@ npm run dev
 
 #### 3. Open the app and sign in to the Studio
 
-Open the Remix app running locally in your browser on [http://localhost:5173](http://localhost:5173).
+Open the Remix app running locally in your browser on [http://localhost:3000](http://localhost:3000).
 
 Open the Studio running locally in your browser on [http://localhost:3333](http://localhost:3333). You should now see a screen prompting you to log in to the Studio. Use the same service (Google, GitHub, or email) that you used when you logged in to the CLI.
 
@@ -50,7 +50,7 @@ The template comes pre-defined with a schema containing a `Post` document type.
 
 From the Studio, click "+ Create" and select the `Post` document type. Go ahead and create and publish the document.
 
-Your content should now appear in your Remix app ([http://localhost:5173](http://localhost:5173)) as well as in the Studio on the "Presentation" Tab
+Your content should now appear in your Remix app ([http://localhost:3000](http://localhost:3000)) as well as in the Studio on the "Presentation" Tab
 
 #### 2. Extending the Sanity schema
 

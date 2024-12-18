@@ -1,5 +1,5 @@
 {
-  "name": "sanity-template-remix-clean-app",
+  "name": "remix-app",
   "private": true,
   "sideEffects": false,
   "type": "module",
