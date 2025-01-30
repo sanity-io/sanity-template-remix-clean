@@ -2,9 +2,9 @@
   "name": "studio",
   "private": true,
   "scripts": {
+    "build": "sanity build",
     "dev": "sanity dev",
-    "start": "sanity start",
-    "build": "sanity build"
+    "start": "sanity start"
   },
   "dependencies": {
     "@sanity/vision": "3.72.1",
