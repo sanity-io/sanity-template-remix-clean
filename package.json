@@ -11,8 +11,8 @@
   },
   "prettier": "@sanity/prettier-config",
   "devDependencies": {
-    "@sanity/prettier-config": "^1.0.3",
-    "concurrently": "^9.1.0",
-    "prettier": "3.4.1"
+    "@sanity/prettier-config": "1.0.3",
+    "concurrently": "9.1.0",
+    "prettier": "3.4.2"
   }
 }
