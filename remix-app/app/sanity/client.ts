@@ -1,5 +1,5 @@
-import { createClient } from '@sanity/client/stega'
-import { stegaEnabled, projectId, dataset, studioUrl } from './projectDetails'
+import {createClient} from '@sanity/client/stega'
+import {stegaEnabled, projectId, dataset, studioUrl} from './projectDetails'
 
 // Do not import this into client-side components unless lazy-loaded
 export const client = createClient({
