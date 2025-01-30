@@ -1,8 +1,8 @@
-import { Link } from '@remix-run/react'
-import type { EncodeDataAttributeCallback } from '@sanity/react-loader'
-import { formatDate } from '~/utils/formatDate'
-import { urlFor } from '~/sanity/image'
-import type { Post } from '~/sanity/types'
+import {Link} from '@remix-run/react'
+import type {EncodeDataAttributeCallback} from '@sanity/react-loader'
+import {formatDate} from '~/utils/formatDate'
+import {urlFor} from '~/sanity/image'
+import type {Post} from '~/sanity/types'
 
 export default function Card({
   post,
@@ -32,9 +32,7 @@ export default function Card({
           <h3 className="card__title">{post.title}</h3>
         </Link>
         <p className="card__excerpt">{post.excerpt}</p>
-        {post._createdAt && (
-          <p className="card__date">{formatDate(post._createdAt)}</p>
-        )}
+        {post._createdAt && <p className="card__date">{formatDate(post._createdAt)}</p>}
       </div>
     </div>
   )
