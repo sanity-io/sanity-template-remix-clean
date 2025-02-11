@@ -14,7 +14,7 @@ const locate: DocumentLocationResolver = (params, context) => {
   if (params.type === 'post') {
     // Listen to the query and fetch the draft and published document
     const doc$ = documentStore.listenQuery(`*[_id == $id][0]{slug,title}`, params, {
-      perspective: 'previewDrafts',
+      perspective: 'drafts',
     }) as Observable<{
       slug: {current: string | null} | null
       title: string | null
