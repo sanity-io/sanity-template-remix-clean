@@ -20,7 +20,7 @@
     "@sanity/image-url": "1.1.0",
     "@sanity/react-loader": "1.10.45",
     "@sanity/visual-editing": "2.13.5",
-    "groq": "3.76.1",
+    "groq": "3.87.1",
     "isbot": "5.1.22",
     "react": "18.3.1",
     "react-dom": "18.3.1"
@@ -29,7 +29,7 @@
     "@portabletext/types": "2.0.13",
     "@remix-run/dev": "2.15.3",
     "@remix-run/eslint-config": "2.15.3",
-    "@sanity/types": "3.76.1",
+    "@sanity/types": "3.87.1",
     "@types/node": "20.8.8",
     "@types/react": "18.3.18",
     "@types/react-dom": "18.3.5",
