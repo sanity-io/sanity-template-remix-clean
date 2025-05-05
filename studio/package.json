@@ -1,5 +1,6 @@
 {
   "name": "studio",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "build": "sanity build",
