@@ -8,18 +8,18 @@
     "start": "sanity start"
   },
   "dependencies": {
-    "@sanity/vision": "3.87.1",
+    "@sanity/vision": "3.99.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "rxjs": "7.8.1",
-    "sanity": "3.87.1",
-    "styled-components": "6.1.15"
+    "rxjs": "7.8.2",
+    "sanity": "3.99.0",
+    "styled-components": "6.1.19"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "4.0.0",
     "@types/node": "20.8.8",
     "@types/react": "19.0.8",
     "eslint": "8.57.1",
-    "typescript": "5.7.3"
+    "typescript": "5.8.3"
   }
 }
