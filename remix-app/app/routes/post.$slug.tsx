@@ -4,14 +4,17 @@ import {useLoaderData} from '@remix-run/react'
 import {useQuery} from '@sanity/react-loader'
 import {formatDate} from '~/utils/formatDate'
 import {urlFor} from '~/sanity/image'
-import {loadQuery} from '~/sanity/loader.server'
+import {client} from '~/sanity/client'
 import {POST_QUERY} from '~/sanity/queries'
 import {Post} from '~/sanity/types'
+import {previewContext} from '~/sanity/preview'
 
-export const loader = async ({params}: LoaderFunctionArgs) => {
-  const initial = await loadQuery<Post>(POST_QUERY, params)
+export const loader = async ({params, request}: LoaderFunctionArgs) => {
+  const { options } = await previewContext(request.headers);
+  
+  const initial = await client.fetch<Post>(POST_QUERY, params, options);
 
-  return {initial, query: POST_QUERY, params}
+  return {initial: { data: initial }, query: POST_QUERY, params}
 }
 
 export default function PostRoute() {

@@ -1,19 +1,23 @@
 import {useLoaderData, type MetaFunction} from '@remix-run/react'
+import {type LoaderFunctionArgs} from '@remix-run/node'
 import {useQuery} from '@sanity/react-loader'
 import Card from '~/components/Card'
 import Welcome from '~/components/Welcome'
-import {loadQuery} from '~/sanity/loader.server'
+import {client} from '~/sanity/client'
 import {POSTS_QUERY} from '~/sanity/queries'
 import {Post} from '~/sanity/types'
+import {previewContext} from '~/sanity/preview'
 
 export const meta: MetaFunction = () => {
   return [{title: 'New Remix App'}]
 }
 
-export const loader = async () => {
-  const initial = await loadQuery<Post[]>(POSTS_QUERY)
+export const loader = async ({ request }: LoaderFunctionArgs) => {
+  const { options } = await previewContext(request.headers);
+  
+  const initial = await client.fetch<Post[]>(POSTS_QUERY, {}, options);
 
-  return {initial, query: POSTS_QUERY, params: {}}
+  return {initial: { data: initial }, query: POSTS_QUERY, params: {}}
 }
 
 export default function Index() {

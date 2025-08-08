@@ -7,15 +7,16 @@ import {Observable, map} from 'rxjs'
 
 export const projectId = process.env.SANITY_STUDIO_PROJECT_ID!
 export const dataset = process.env.SANITY_STUDIO_DATASET!
+const SANITY_STUDIO_PREVIEW_URL = process.env.SANITY_STUDIO_PREVIEW_URL || 'http://localhost:3000'
 
 const locate: DocumentLocationResolver = (params, context) => {
   const {documentStore} = context
 
   if (params.type === 'post') {
     // Listen to the query and fetch the draft and published document
-    const doc$ = documentStore.listenQuery(`*[_id == $id][0]{slug,title}`, params, {
+    const doc$ = documentStore.listenQuery(`*[_id == $id][0]{slug,title}`, {id: params.id}, {
       perspective: 'drafts',
-    }) as Observable<{
+    }) as unknown as Observable<{
       slug: {current: string | null} | null
       title: string | null
     } | null>
@@ -51,7 +52,14 @@ export default defineConfig({
   plugins: [
     structureTool(),
     presentationTool({
-      previewUrl: process.env.SANITY_STUDIO_PREVIEW_URL || 'http://localhost:3000',
+      previewUrl: {
+        origin: SANITY_STUDIO_PREVIEW_URL,
+        preview: "/",
+        previewMode: {
+          enable: '/api/preview-mode/enable',
+          disable: '/api/preview-mode/disable',
+        },
+      },
       locate,
     }),
     visionTool(),

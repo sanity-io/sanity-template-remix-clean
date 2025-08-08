@@ -1,4 +1,4 @@
-import {type LinksFunction, json} from '@remix-run/node'
+import {type LinksFunction, json, type LoaderFunctionArgs} from '@remix-run/node'
 import styles from './styles/index.css'
 import {
   Link,
@@ -11,17 +11,20 @@ import {
   useLoaderData,
 } from '@remix-run/react'
 import {Suspense, lazy} from 'react'
+import {previewContext} from '~/sanity/preview'
 
-const LiveVisualEditing = lazy(() => import('~/components/LiveVisualEditing'))
+const SanityVisualEditing = lazy(() => import('~/components/SanityVisualEditing'))
 
-export const loader = () => {
+export const loader = async ({ request }: LoaderFunctionArgs) => {
+  const { preview } = await previewContext(request.headers);
+
   return json({
     ENV: {
-      SANITY_STUDIO_PROJECT_ID: process.env.SANITY_STUDIO_PROJECT_ID,
-      SANITY_STUDIO_DATASET: process.env.SANITY_STUDIO_DATASET,
-      SANITY_STUDIO_URL: process.env.SANITY_STUDIO_URL,
-      SANITY_STUDIO_STEGA_ENABLED: process.env.SANITY_STUDIO_STEGA_ENABLED,
+      PUBLIC_SANITY_PROJECT_ID: process.env.PUBLIC_SANITY_PROJECT_ID,
+      PUBLIC_SANITY_DATASET: process.env.PUBLIC_SANITY_DATASET,
+      PUBLIC_SANITY_STUDIO_URL: process.env.PUBLIC_SANITY_STUDIO_URL,
     },
+    preview,
   })
 }
 
@@ -38,7 +41,7 @@ export const links: LinksFunction = () => {
 }
 
 export default function App() {
-  const {ENV} = useLoaderData<typeof loader>()
+  const {ENV, preview} = useLoaderData<typeof loader>()
 
   return (
     <html lang="en">
@@ -86,11 +89,11 @@ export default function App() {
             __html: `window.ENV = ${JSON.stringify(ENV)}`,
           }}
         />
-        {ENV.SANITY_STUDIO_STEGA_ENABLED ? (
+        {preview && (
           <Suspense>
-            <LiveVisualEditing />
+            <SanityVisualEditing />
           </Suspense>
-        ) : null}
+        )}
         <Scripts />
         <LiveReload />
       </body>

@@ -1,14 +1,24 @@
-import {createClient} from '@sanity/client/stega'
-import {stegaEnabled, projectId, dataset, studioUrl} from './projectDetails'
+import { createClient } from "@sanity/client";
 
-// Do not import this into client-side components unless lazy-loaded
+declare global {
+  interface Window {
+    ENV: {
+      PUBLIC_SANITY_PROJECT_ID: string;
+      PUBLIC_SANITY_DATASET: string;
+      PUBLIC_SANITY_STUDIO_URL: string;
+    };
+  }
+}
+
+const env = typeof document === "undefined" ? process.env : window.ENV;
+
 export const client = createClient({
-  projectId,
-  dataset,
+  projectId: env.PUBLIC_SANITY_PROJECT_ID,
+  dataset: env.PUBLIC_SANITY_DATASET,
+  apiVersion: "2025-08-08",
   useCdn: true,
-  apiVersion: '2023-03-20',
   stega: {
-    enabled: stegaEnabled,
-    studioUrl,
+    enabled: true,
+    studioUrl: env.PUBLIC_SANITY_STUDIO_URL,
   },
-})
+});

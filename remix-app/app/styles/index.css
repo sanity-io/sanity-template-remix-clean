@@ -399,9 +399,9 @@ main {
 }
 
 .card .card__link::before {
-  content: '';
+  /* content: '';
   position: absolute;
-  inset: 0;
+  inset: 0; */
 }
 
 .card:first-child {
