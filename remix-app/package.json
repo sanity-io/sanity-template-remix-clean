@@ -8,8 +8,8 @@
     "build": "remix build",
     "dev": "remix dev",
     "generate:css": "postcss ./app/styles --dir ./app/styles/build",
-    "start": "remix-serve build",
-    "typecheck": "tsc"
+    "start": "remix-serve build/index.js",
+    "typecheck": "tsc --skipLibCheck"
   },
   "dependencies": {
     "@portabletext/react": "3.2.1",

@@ -86,7 +86,7 @@ export default function App() {
             __html: `window.ENV = ${JSON.stringify(ENV)}`,
           }}
         />
-        {ENV.SANITY_STUDIO_STEGA_ENABLED ? (
+        {ENV.SANITY_STUDIO_STEGA_ENABLED === 'true' ? (
           <Suspense>
             <LiveVisualEditing />
           </Suspense>
