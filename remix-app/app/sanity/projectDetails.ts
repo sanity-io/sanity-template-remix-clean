@@ -24,4 +24,4 @@ export const stegaEnabled = SANITY_STUDIO_STEGA_ENABLED === 'true'
 if (!projectId) throw new Error('Missing SANITY_STUDIO_PROJECT_ID in .env')
 if (!dataset) throw new Error('Missing SANITY_STUDIO_DATASET in .env')
 if (!studioUrl) throw new Error('Missing SANITY_STUDIO_URL in .env')
-if (!stegaEnabled) throw new Error(`Missing SANITY_STUDIO_STEGA_ENABLED in .env`)
+if (stegaEnabled === undefined) throw new Error(`Missing SANITY_STUDIO_STEGA_ENABLED in .env`)
