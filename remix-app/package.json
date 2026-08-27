@@ -36,7 +36,7 @@
     "@vercel/remix": "2.15.3",
     "autoprefixer": "10.4.20",
     "eslint": "8.57.1",
-    "postcss": "8.5.2",
+    "postcss": "8.5.23",
     "postcss-cli": "11.0.0",
     "typescript": "5.7.3"
   }
